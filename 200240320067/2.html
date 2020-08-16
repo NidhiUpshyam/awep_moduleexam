@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="2.js"></script>
+</head>
+
+<body id="ab" style="height: 80%; width:20%;">
+
+    <div style="display:flex; justify-content:center;align-items:center;margin-top:18%;">
+
+
+
+        <div class="login-form" style="border:3px solid; background:tomato;">
+            <form action="">
+                <label for="username" style="margin:2px;">USERNAME</label>
+                <input type="username" name="username" id="inputid1" value="" placeholder="enter username" required><br>
+
+                <label for="password">PASSWORD</label>
+                <input type="password" style="margin:2px; margin-left:6px;" id="psw"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Must contain at least one number and one uppercase and lowercase letter,and at least 8 or more characters"
+                    id="inputid2" value="" placeholder="enter password" required><br>
+
+
+
+
+                <button onclick="cancel()">cancel</button><button id="btnid" onclick=" submitHere()">submit 1</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
